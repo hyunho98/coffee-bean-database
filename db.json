@@ -1,0 +1,16 @@
+{
+    "coffee_beans": [
+        {
+            "id": 1,
+            "location": "ETHIOPIA",
+            "name": "DECAF SIDAMO NATURAL",
+            "taste": "Strawberry jam, pomegranate, and dark chocolate"
+        },
+        {
+            "id": 2,
+            "location": "ETHIOPIA",
+            "name": "LONGBERRY",
+            "taste": "Smooth, full body with a winey, sweet, and bright acidity and fruity notes of blueberry"
+        }
+    ]
+}
