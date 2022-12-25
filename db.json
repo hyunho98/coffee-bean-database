@@ -1,39 +1,39 @@
 {
-    "coffee_beans": [
-        {
-            "id": 1,
-            "location": "ETHIOPIA",
-            "name": "DECAF SIDAMO NATURAL",
-            "taste": "Strawberry jam, pomegranate, and dark chocolate",
-            "rating": 0
-        },
-        {
-            "id": 2,
-            "location": "ETHIOPIA",
-            "name": "LONGBERRY",
-            "taste": "Smooth, full body with a winey, sweet, and bright acidity and fruity notes of blueberry",
-            "rating": 0
-        },
-        {
-            "id": 3,
-            "location": "COSTA RICA",
-            "name": "LA MINITA ESTATE",
-            "taste": "Brilliant acidity, a medium body, and sweet flavors of orange citrus, caramelized sugar, and fine chocolate. It is impeccably balanced with a long, satisfying finish",
-            "rating": 0
-        },
-        {
-            "id": 4,
-            "location": "HAWAII",
-            "name": "KONA EXTRA FANCY",
-            "taste": "Fruit / Floral / Nuts / Milk Chocolate / Caramel / Slightly Sweet",
-            "rating": 0
-        },
-        {
-            "id": 5,
-            "location": "VIETNAM",
-            "name": "ROBUSTA",
-            "taste": "Coffee made from robusta coffee beans are stronger, nuttier, and darker than arabica coffee",
-            "rating": 0
-        }
-    ]
+  "coffee_beans": [
+    {
+      "id": 1,
+      "location": "ETHIOPIA",
+      "name": "DECAF SIDAMO NATURAL",
+      "taste": "Strawberry jam, pomegranate, and dark chocolate",
+      "rating": 0
+    },
+    {
+      "id": 2,
+      "location": "ETHIOPIA",
+      "name": "LONGBERRY",
+      "taste": "Smooth, full body with a winey, sweet, and bright acidity and fruity notes of blueberry",
+      "rating": 0
+    },
+    {
+      "id": 3,
+      "location": "COSTA RICA",
+      "name": "LA MINITA ESTATE",
+      "taste": "Brilliant acidity, a medium body, and sweet flavors of orange citrus, caramelized sugar, and fine chocolate. It is impeccably balanced with a long, satisfying finish",
+      "rating": 0
+    },
+    {
+      "id": 4,
+      "location": "HAWAII",
+      "name": "KONA EXTRA FANCY",
+      "taste": "Fruit / Floral / Nuts / Milk Chocolate / Caramel / Slightly Sweet",
+      "rating": 0
+    },
+    {
+      "id": 5,
+      "location": "VIETNAM",
+      "name": "ROBUSTA",
+      "taste": "Coffee made from robusta coffee beans are stronger, nuttier, and darker than arabica coffee",
+      "rating": 0
+    }
+  ]
 }
