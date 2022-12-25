@@ -6,7 +6,46 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <h1>Sample Text</h1>
+    <div id="coffee-header"> 
+        <h1>Coffee Bean DB</h1>
+    </div>
+
+    <div class="container">
+        <form class="add-coffee-form">
+            <h3>Add coffee!</h3>
+  
+            <input
+                type="text"
+                name="location"
+                value=""
+                placeholder="Enter the bean's location..."
+                class="input-text"
+            />
+            <br/>
+            <input
+                type="text"
+                name="name"
+                value=""
+                placeholder="Enter the bean's name..."
+                class="input-text"
+            />
+            <br/>
+            <input
+                type="text"
+                name="taste"
+                value=""
+                placeholder="Enter the bean's taste..."
+                class="input-text"
+            />
+            <br/>
+            <input
+                type="submit"
+                name="submit"
+                value="Add Coffee"
+                class="submit"
+            />
+        </form>
+      </div>
     <script type="text/javascript" src="src/index.js"></script>
   </body>
 </html>
