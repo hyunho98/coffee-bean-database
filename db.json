@@ -11,6 +11,24 @@
             "location": "ETHIOPIA",
             "name": "LONGBERRY",
             "taste": "Smooth, full body with a winey, sweet, and bright acidity and fruity notes of blueberry"
+        },
+        {
+            "id": 3,
+            "location": "COSTA RICA",
+            "name": "LA MINITA ESTATE",
+            "taste": "Brilliant acidity, a medium body, and sweet flavors of orange citrus, caramelized sugar, and fine chocolate. It is impeccably balanced with a long, satisfying finish"
+        },
+        {
+            "id": 4,
+            "location": "HAWAII",
+            "name": "KONA EXTRA FANCY",
+            "taste": "Fruit / Floral / Nuts / Milk Chocolate / Caramel / Slightly Sweet"
+        },
+        {
+            "id": 5,
+            "location": "VIETNAM",
+            "name": "ROBUSTA",
+            "taste": "Coffee made from robusta coffee beans are stronger, nuttier, and darker than arabica coffee"
         }
     ]
 }
