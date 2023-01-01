@@ -1,4 +1,5 @@
 //list based on location in the db.json
+//star rating system
 document.addEventListener("DOMContentLoaded", (e) => {
     const locations = new Set()
     const coffeeForm = document.querySelector('.add-coffee-form')
@@ -34,7 +35,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
             data.forEach((bean) => {
                 document.getElementById('tile-container').append(createTile(bean))
                 locations.add(bean.location)
-                console.log(locations)
             })
         })
 })
@@ -44,14 +44,43 @@ function createTile(beanObj) {
     const locationh3 = document.createElement('h3')
     const nameh3 = document.createElement('h3')
     const p = document.createElement('p')
-    const h4 = document.createElement('h4')
+    const div = document.createElement('div')
+
     tile.className = 'tile'
     locationh3.innerText = beanObj.location
     locationh3.className = 'location'
     nameh3.innerText = beanObj.name
     nameh3.className = 'name'
     p.innerText = beanObj.taste
-    h4.className = `rating ${beanObj.rating}`
-    tile.append(locationh3, nameh3, p, h4)
+    div.className = `rating ${beanObj.rating}`
+
+    createStars(div)
+    tile.append(locationh3, nameh3, p, div)
     return tile;
-  }
+}
+
+function createStars(div) {
+    let h4
+    for(let i = 0; i < 5; i++) {
+        h4 = document.createElement('h4')
+        h4.innerText = '☆'
+        h4.className = `${i + 1}`
+        div.append(h4)
+    }
+
+    for(let i = 0; i < 5; i++) {
+        div.children[i].addEventListener(('click'), (e) => {
+            toggleStars(div, (i + 1))
+        })
+    }
+}
+
+function toggleStars(rDiv, rating) {
+    for(let i = rating - 1; i >= 0; i--) {
+        if (rDiv.children[i].innerHTML === '★') {
+            rDiv.children[i].innerHTML = '☆'
+        } else {
+            rDiv.children[i].innerHTML = '★'
+        }
+    }
+}
