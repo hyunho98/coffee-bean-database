@@ -19,7 +19,7 @@
       "location": "COSTA RICA",
       "name": "LA MINITA ESTATE",
       "taste": "Brilliant acidity, a medium body, and sweet flavors of orange citrus, caramelized sugar, and fine chocolate. It is impeccably balanced with a long, satisfying finish",
-      "rating": 0
+      "rating": 2
     },
     {
       "id": 4,
@@ -33,7 +33,7 @@
       "location": "VIETNAM",
       "name": "ROBUSTA",
       "taste": "Coffee made from robusta coffee beans are stronger, nuttier, and darker than arabica coffee",
-      "rating": 0
+      "rating": 2
     },
     {
       "location": "YEMEN",

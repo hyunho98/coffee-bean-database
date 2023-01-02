@@ -1,4 +1,3 @@
-//list based on location in the db.json
 const locations = new Set()
 
 document.addEventListener("DOMContentLoaded", (e) => {
@@ -42,7 +41,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         })
     })
 
-
+    //Creates a change event listener for the location sort
     locationSelect.addEventListener('change', (e) => {
         const locationElements = document.querySelectorAll('.location')
         for (let i = 0; i < locationElements.length; i++) {
@@ -59,17 +58,17 @@ document.addEventListener("DOMContentLoaded", (e) => {
 //Creates tiles to be added to the DOM
 function createTile(beanObj) {
     const tile = document.createElement('div')
-    const locationh3 = document.createElement('h3')
-    const nameh3 = document.createElement('h3')
+    const h2 = document.createElement('h2')
+    const h3 = document.createElement('h3')
     const p = document.createElement('p')
     const div = document.createElement('div')
 
     tile.id = beanObj.id
     tile.className = 'tile'
-    locationh3.innerText = beanObj.location
-    locationh3.className = `location ${beanObj.location.replaceAll(' ','-').toLowerCase()}`
-    nameh3.innerText = beanObj.name
-    nameh3.className = 'name'
+    h2.innerText = beanObj.location
+    h2.className = `location ${beanObj.location.replaceAll(' ','-').toLowerCase()}`
+    h3.innerText = beanObj.name
+    h3.className = 'name'
     p.innerText = beanObj.taste
     div.className = `rating ${beanObj.rating}`
     createStars(div)
@@ -77,7 +76,7 @@ function createTile(beanObj) {
     if (beanObj.rating > 0)
         toggleStars(div, beanObj.rating)
 
-    tile.append(locationh3, nameh3, p, div)
+    tile.append(h2, h3, p, div)
     return tile;
 }
 
@@ -87,7 +86,7 @@ function createStars(div) {
     for(let i = 0; i < 5; i++) {
         h4 = document.createElement('h4')
         h4.innerText = '☆'
-        h4.className = `${i + 1}`
+        h4.className = 'star'
         div.append(h4)
     }
 

@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font: "New Courier";
+    background-color: #d2b48c;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+textarea {
+    width: 20rem;
+    height: 5rem;
+}
+
+input {
+    width: 20rem;
+}
+  
+#coffee-header {
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    padding: 1rem;
+    border-bottom-style: solid;
+    border-color: black;
+}
+
+#location-sort {
+    display: flex;
+    justify-content: flex-end;
+    height: 1rem;
+}
+
+.container #location-select {
+    width: auto;
+}
+
+.container {
+    padding: 1rem;
+    width: stretch;
+    height: auto;
+}
+
+.container #add-coffee-form {
+    display: inline-flexbox;
+    width: ;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3, p{
+    padding: 0px;
+    margin: 0px;
+}
+  
+/* #tile-container {
+} */
+
+#tile-container .tile {
+    text-align: center;
+    padding: 12px;
+    width: 95%;
+    height: auto;
+    display: inline-flexbox;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: #F0EAD6;
+}
+
+.tile h2 {
+    padding-top: 0px;
+    padding-bottom: 8px;
+    margin: 0px;
+    text-decoration-line: underline;
+}
+  
+.star {
+    display: inline-block;
+    padding-top: 8px;
+  }
