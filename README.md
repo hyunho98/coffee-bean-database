@@ -4,9 +4,9 @@ Welcome to the Coffee Bean Database! Keep track of your favorite (or least favor
 
 ## Features
 
-- Add new beans with select attributes (location, roast, tasting notes)
-- Rate beans on your list from 1 to 5 stars
-- View your list of beans in a filtered list
+- Add new coffee beans with select attributes (location, name, tasting notes)
+- Rate coffee beans on your list from 1 to 5 stars
+- Sort and view coffee beans by location
 
 ## Installation
 
