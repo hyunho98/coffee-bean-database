@@ -11,7 +11,7 @@
     </div>
 
     <div class="container">
-        <form class="add-coffee-form">
+        <form id="add-coffee-form">
             <h3>Add coffee!</h3>
   
             <input
@@ -30,13 +30,13 @@
                 class="input-text"
             />
             <br/>
-            <input
+            <textarea
                 type="text"
                 name="taste"
                 value=""
                 placeholder="Enter the bean's taste..."
                 class="input-text"
-            />
+            ></textarea>
             <br/>
             <input
                 type="submit"
@@ -45,6 +45,12 @@
                 class="submit"
             />
         </form>
+        <label id="location-sort">
+            SORT BY LOCATION
+            <select id="location-select">
+              <option value="all">ALL LOCATIONS</option>
+            </select>
+        </label>
         <div id="tile-container"></div>
     </div>
     <script type="text/javascript" src="src/index.js"></script>

@@ -26,7 +26,7 @@
       "location": "HAWAII",
       "name": "KONA EXTRA FANCY",
       "taste": "Fruit / Floral / Nuts / Milk Chocolate / Caramel / Slightly Sweet",
-      "rating": 0
+      "rating": 2
     },
     {
       "id": 5,
@@ -34,6 +34,13 @@
       "name": "ROBUSTA",
       "taste": "Coffee made from robusta coffee beans are stronger, nuttier, and darker than arabica coffee",
       "rating": 0
+    },
+    {
+      "location": "YEMEN",
+      "name": "MOCCA HAJJAH",
+      "taste": "Blueberry, dried strawberry, anise, and dark chocolate",
+      "rating": 0,
+      "id": 6
     }
   ]
 }
