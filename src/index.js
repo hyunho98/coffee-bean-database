@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         })
 })
 
+//Creates tiles to be added to the DOM
 function createTile(beanObj) {
     const tile = document.createElement('div')
     const locationh3 = document.createElement('h3')
@@ -46,6 +47,7 @@ function createTile(beanObj) {
     const p = document.createElement('p')
     const div = document.createElement('div')
 
+    tile.id = beanObj.id
     tile.className = 'tile'
     locationh3.innerText = beanObj.location
     locationh3.className = 'location'
@@ -53,12 +55,16 @@ function createTile(beanObj) {
     nameh3.className = 'name'
     p.innerText = beanObj.taste
     div.className = `rating ${beanObj.rating}`
-
     createStars(div)
+    
+    if (beanObj.rating > 0)
+        toggleStars(div, beanObj.rating)
+
     tile.append(locationh3, nameh3, p, div)
     return tile;
 }
 
+//Creates the stars for the star rating system
 function createStars(div) {
     let h4
     for(let i = 0; i < 5; i++) {
@@ -68,16 +74,36 @@ function createStars(div) {
         div.append(h4)
     }
 
+    starEventListener(div)
+}
+
+function starEventListener(div) {
     for(let i = 0; i < 5; i++) {
         div.children[i].addEventListener(('click'), (e) => {
             toggleStars(div, (i + 1))
+            fetch(`http://localhost:3000/coffee_beans/${e.target.parentElement.parentElement.id}`, {
+                method: 'PATCH',
+                headers: {
+                    'Content-Type': 'application/json',
+                    Accept: 'application/json'
+                },
+                body: JSON.stringify({
+                    'rating': (i + 1)
+                })
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    e.target.classList.replace(e.target.classList.item(1), `${data.rating}`)
+                })
+            
         })
     }
 }
 
+//Toggles stars between black and white stars depending on which star is clicked
 function toggleStars(rDiv, rating) {
-    for(let i = rating - 1; i >= 0; i--) {
-        if (rDiv.children[i].innerHTML === '★') {
+    for(let i = 0; i < 5; i++) {
+        if (i >= rating) {
             rDiv.children[i].innerHTML = '☆'
         } else {
             rDiv.children[i].innerHTML = '★'
