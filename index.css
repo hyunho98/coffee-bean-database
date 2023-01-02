@@ -44,7 +44,7 @@ input {
 
 .container #add-coffee-form {
     display: inline-flexbox;
-    width: ;
+    width: auto;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
