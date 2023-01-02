@@ -128,6 +128,7 @@ function toggleStars(rDiv, rating) {
     }
 }
 
+//Creates and adds options to the location list
 function createOption(location) {
     const option = document.createElement('option')
     option.value = location.replaceAll(' ', '-').toLowerCase()
