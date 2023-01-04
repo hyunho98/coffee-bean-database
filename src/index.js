@@ -134,5 +134,5 @@ function createOption(location) {
     option.value = location.replaceAll(' ', '-').toLowerCase()
     option.innerHTML = location
     document.getElementById('location-select').append(option)
-    locations.add(location)
+    locations.add(location.toUpperCase())
 }
